@@ -3,6 +3,15 @@
 require_relative '../config/environment.rb'
 
 # test code goes here
+lifter1 = Lifter.new("Biggness", 300)
+lifter2 = Lifter.new("Tiny", 400)
+lifter3 = Lifter.new("Joe", 150)
+
+gymA = Gym.new("Silvers")
+gymB = Gym.new("El Slumpy")
+
+lifter1.sign_up(gymA, 123)
+lifter2.sign_up(gymA, 200)
 
 binding.pry
 
